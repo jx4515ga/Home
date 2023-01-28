@@ -1,0 +1,262 @@
+:root{
+    --bg-white: rgba(255,255,255,0.3);
+    --br: 5px;
+    --border:  solid 1px rgba(255,255,255,0.5);
+}
+
+
+body{
+
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(135deg, #f7f58c 0%, #67448b 100%);
+    /*
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 700px;
+
+    /*
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%)*/
+}
+
+.container{
+
+    height: 95vh;
+    background-color: var(--bg-white);
+    backdrop-filter: var(--border);
+    border: solid 1px rgba(255,255,255,0.5);
+    border-radius: var(--br);
+    width: 90% ;
+    margin: 0 auto;
+
+    overflow: hidden;
+    box-shadow: 0 10px 20px 5px rgba(0,0,0,0.05);
+    display: flex;
+
+}
+
+.sidebar{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 35%;
+}
+
+.sidebar ul{
+    padding: 0;
+    margin:  20px 0;
+    list-style: none;
+    text-align: center;
+}
+
+.sidebar ul li a{
+    font-size: 20px;
+    color: black;
+    display: block;
+    text-decoration: var(--br);
+    padding: 12px 10px;
+}
+
+.sidebar ul li a:hover{
+    color: white;
+    /*
+    border-radius: var(--br);*/
+    background-color: #0084ff;
+    box-shadow:0 5px 10px 2px rgba(10, 137, 255, 0.5);
+}
+
+
+
+.profile-card{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    
+
+}
+
+.profile{
+    border-radius: 50%;
+    width: 70%;
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container .profile-card h2{
+    color: black;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/*Here start the social media icons*/
+.social-menu ul{
+    overflow: hidden;
+    top: 50%;
+    left: 35px;
+    margin: 15px;
+    
+    
+  }
+
+
+
+.social-menu ul li{
+    
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 10px;
+    
+}
+
+
+.social-menu ul li .fab{
+    font-size: 35px;
+    line-height: 40px;
+    transition: .3s;
+    color: #000;
+  }
+
+  .social-menu ul li .fab:hover{
+    color: #fff;
+  }
+
+
+  .social-menu ul li a{
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0,0,0,.5);
+  }
+  
+  .social-menu ul li a:hover{
+    transform: translate(0, -10%);
+  }
+  
+  .social-menu ul li:nth-child(1) a:hover{
+    background-color: rgba(0, 0, 0, 0.829);
+  }
+  .social-menu ul li:nth-child(2) a:hover{
+    background-image:
+    radial-gradient(circle at 30% 107%,
+    #fdf497 0%, #fdf497 5%,
+    #fd5949 45%, #d6249f 60%,
+    #285AEB 90%);
+    outline-color: #a02d76;
+  }
+  .social-menu ul li:nth-child(3) a:hover{
+    background-color: #0077b5;
+  }
+  .social-menu ul li:nth-child(4) a:hover{
+    background-color: #000;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+/*Here start the right box*/
+
+main{
+    padding: 20px;
+    width: 65%;
+}
+
+main .header h1{
+    color: black;
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+main .header span{
+    color: rgb(255, 50, 50);
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: bolder;
+    display: block;
+
+}
+
+
+
+.card{
+    
+    border-radius: var(--br);
+    box-sizing: border-box;
+    width: 100%;
+    margin:  10px 0 20px ;
+    overflow: hidden;
+    height: 70vh;
+
+    /*
+    border: var(--border);
+    
+    box-shadow: 0 5px 15px 2px rgba(0, 0, 0, 0.15);*/
+}
+
+
+.card .text-one{
+    padding: 25px;
+    font-size: 35px;
+    margin-top: 40px;
+
+}
+
+.card .text-two{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+
+.card .text-three{
+    font-size: 50px;
+    color: #0084ff;
+    font-weight: 500;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+.card .text-four{
+    font-size: 30px;
+    color: #0084ff;
+    font-weight: 500;
+    margin-left: 13rem;
+}
+
+.card .text-five{
+    font-size: 50px;
+    color: #0084ff;
+    font-weight: 500;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.card .text-six{
+    margin:  10px;
+    padding: 10px;
+    font-size: 25px;
+
+}
